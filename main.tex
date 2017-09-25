@@ -1,0 +1,206 @@
+%\documentclass[sigconf, authordraft]{acmart}
+
+\documentclass[sigconf,review, anonymous]{acmart}
+\acmConference[ICSE 2018]{40th International Conference on Software Engineering}{May 27--June 3, 2018}{Gothenburg, Sweden}
+\acmYear{2018}
+
+\usepackage{booktabs} % For formal tables
+\usepackage[nolist]{acronym} %Abbreviation
+\usepackage{url}      % llt: nicely formatted URLs
+\usepackage{csquotes} % for using the enquote command
+\AtBeginEnvironment{quote}{\itshape} %italics for quotes
+
+\usepackage{comment}
+\usepackage{soul}
+\renewcommand{\emph}[1]{\ul{#1}}
+\usepackage{todonotes}
+\usepackage{colortbl}
+\usepackage{ulem}
+\usepackage{ifthen}
+\usepackage{amssymb}
+\usepackage{balance}
+
+\newboolean{showcomments}
+\setboolean{showcomments}{true} % toggle to show or hide comments
+\ifthenelse{\boolean{showcomments}}
+{\newcommand{\nb}[2]{
+		\fcolorbox{black}{yellow}{\bfseries\sffamily\scriptsize#1}
+		{\sf\small$\blacktriangleright$\textit{#2}$\blacktriangleleft$}
+	}
+	\newcommand{\version}{\emph{\scriptsize$-$working$-$}}
+}
+{\newcommand{\nb}[2]{}
+	\newcommand{\version}{}
+}
+
+\newcommand{\ra}{$\rightarrow$}
+\newcommand{\ugh}[1]{\textcolor{red}{\uwave{#1}}} % please rephrase
+\newcommand{\ins}[1]{\textcolor{blue}{\uline{#1}}} % please insert
+\newcommand{\del}[1]{\textcolor{red}{\sout{#1}}} % please delete
+\newcommand{\chg}[2]{\textcolor{red}{\sout{#1}}{\ra}\textcolor{blue}{\uline{#2}}}
+
+% Removes the right margin present in the original quotation environment
+\newenvironment{widequotation}{\list{}{\listparindent 0em \itemindent\listparindent
+	\leftmargin 10pt	\rightmargin 0pt \parsep 0pt plus 1pt}\item\relax}
+{\endlist}
+\def\signed#1{{\leavevmode\unskip\nobreak\hfil\penalty50\hskip2em
+		\hbox{}\nobreak\hfil\raise-1pt\hbox{#1}%
+		\parfillskip=0pt \finalhyphendemerits=0 \endgraf}}
+\newsavebox\mybox
+\newenvironment{aquote}[1]
+	{\savebox\mybox{(#1)}\begin{widequotation}\itshape``\ignorespaces}
+	{\unskip''\signed{\usebox\mybox}\end{widequotation}}
+
+\newcommand\tobias[1]{\nb{Tobias}{#1}}
+\newcommand\patrizio[1]{\nb{Patrizio}{#1}}
+\newcommand\gordana[1]{\nb{Gordana}{#1}}
+
+% Copyright
+%\setcopyright{none}
+%\setcopyright{acmcopyright}
+%\setcopyright{acmlicensed}
+\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+
+% DOI
+%\acmDOI{10.475/123_4} %TODO
+
+% ISBN
+%\acmISBN{123-4567-24-567/08/06} %TODO
+
+%Conference
+%\acmConference[WOODSTOCK'97]{ACM Woodstock conference}{July 1997}{El
+%  Paso, Texas USA} 
+%\acmYear{2017} %TODO
+\copyrightyear{2017} %TODO
+
+\acmPrice{15.00} %TODO
+
+\acmSubmissionID{123-A12-B3}
+
+\begin{document}
+\title{Ethical and Social Aspects of Self-Driving Cars}
+\titlenote{Produces the permission block, and copyright information}
+%\subtitle{Extended Abstract}
+%\subtitlenote{The full version of the author's guide is available as \texttt{acmart.pdf} document}
+
+
+
+%TODO: CHECK ADDRESSES
+
+\author{Tobias Holstein}
+%\authornote{Test}
+\orcid{0000-0001-6020-1785}
+\affiliation{%
+  \institution{M{\"a}lardalen University}
+  \streetaddress{H{\"o}gskoleplan 1}
+  \city{V{\"a}ster{\r{a}}s} 
+  \country{Sweden} 
+  \postcode{721 23}
+}
+\email{tobias.holstein@mdh.se}
+
+\author{Gordana Dodig-Crnkovic}
+%\authornote{Test.}
+\orcid{0000-0001-9881-400X}
+\affiliation{%
+  \institution{Chalmers University of Technology | University of Gothenburg}
+  \streetaddress{Maskingr{\"a}nd 2}
+  \city{Gothenburg} 
+  \country{Sweden}
+  \postcode{412 96}
+}
+\email{gordana.dodig-crnkovic@chalmers.se}
+
+
+\author{Patrizio Pelliccione}
+%\authornote{Test}
+\orcid{0000-0002-5438-2281}
+\affiliation{%
+  \institution{Chalmers University of Technology | University of Gothenburg}
+  \streetaddress{Maskingr{\"a}nd 2}
+  \city{Gothenburg} 
+  \country{Sweden}
+  \postcode{412 96}
+}
+\email{patrizio.pelliccione@gu.se}
+
+
+
+% The default list of authors is too long for headers.
+\renewcommand{\shortauthors}{T. Holstein et al.}
+
+
+
+%Abbreviations
+\begin{acronym}
+    \acro{ECU}{Electronic Control Unit}
+\end{acronym}
+
+
+
+
+
+\begin{abstract}
+As an envisiged future of transportation, self-driving cars are being discussed from various perspectives, including social, economical, engineering, computer science, design, and ethics. On one hand, self-driving cars present new engineering problems that are being gradually successfully solved. On the other hand, social and ethical problems are typically being presented in the form of an idealized unsolvable decision-making problem, the so-called trolley problem, which is grossly misleading. We argue that an applied engineering ethical approach for the development of new technology is what is needed; the approach should be applied, meaning that it should focus on the analysis of complex real-world engineering problems. Software plays a crucial role for the control of self-driving cars; therefore, software engineering  solutions should seriously handle ethical and social considerations. 
+In this paper we take a closer look at the regulative instruments, standards, design, and implementations of components, systems, and services and we present practical social and ethical challenges that have to be met, as well as novel expectations for software engineering.
+%\footnote{This is an abstract footnote}
+\end{abstract}
+
+
+
+
+%
+% The code below should be generated by the tool at
+% http://dl.acm.org/ccs.cfm
+% Please copy and paste the code instead of the example below. 
+%
+%TODO: Generate CCS for D.2 SOFTWARE ENGINEERING, D.2.9 Management, K.4.1 Public Policy Issues [ethics], K.4.2 Social Issues, I.2.9 Robotics [autonomous vehicles]
+%
+%
+\begin{CCSXML}
+<ccs2012>
+ <concept>
+  <concept_id>10010520.10010553.10010562</concept_id>
+  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
+  <concept_significance>500</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010520.10010575.10010755</concept_id>
+  <concept_desc>Computer systems organization~Redundancy</concept_desc>
+  <concept_significance>300</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010520.10010553.10010554</concept_id>
+  <concept_desc>Computer systems organization~Robotics</concept_desc>
+  <concept_significance>100</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10003033.10003083.10003095</concept_id>
+  <concept_desc>Networks~Network reliability</concept_desc>
+  <concept_significance>100</concept_significance>
+ </concept>
+</ccs2012>  
+\end{CCSXML}
+
+\ccsdesc[500]{Computer systems organization~Embedded systems}
+\ccsdesc[300]{Computer systems organization~Redundancy}
+\ccsdesc{Computer systems organization~Robotics}
+\ccsdesc[100]{Networks~Network reliability}
+
+
+\keywords{ACM proceedings, \LaTeX, text tagging}
+
+
+\maketitle
+
+\input{content}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references} 
+
+\end{document}
