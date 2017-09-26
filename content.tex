@@ -54,14 +54,25 @@ Developing self-driving cars that act without a driver means to replace a human,
 
 \begin{figure}
 %TODO: \includegraphics[height=1in, width=1in]{fly}
+\centering
+\includegraphics[width=1\linewidth]{Figures/comparisonHuman_Computers_Sense.pdf}
 \caption{Comparison of human and computers sense, think and act process (cf. \cite{Ghisio2016}) which we extended by adding a feedback loop}
 \label{fig:ComparisonHumanComputerProcess}
 \end{figure}
+
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=1\linewidth]{artifacts.pdf}
+%	\caption{Classification of artifacts}
+%	\label{fig:artifacts}
+%\end{figure}
 
 There is an important difference in the feedback loop. While humans continuously learn, for example from their mistakes or misbehaviour, automotive software might be confined to slow updates. Approaches with self-adaptive software, such as machine learning approaches, which learns and reacts immediately, aim to overcome this constraint. Extraordinary road signs for example, which are new to the self-driving car's software, present a risk as they can pass unnoticed/uninterpreted, while they could be understood by a human through context/interpretation. Also unexpected and dangerous situations, like an attack or threat near or even against the vehicle might not be correctly interpreted by a self-driving car compared to a human. 
 
 \begin{figure}
 %TODO: \includegraphics[height=1in, width=1in]{fly}
+\centering
+\includegraphics[width=1\linewidth]{Figures/pointCloud.pdf}
 \caption{Point cloud image of a vehicle approaching an intersection illustrates the complexity \cite{EarthImagingJournalEIJ:RemoteSensingSatelliteImages2012}}
 \label{fig:PointCloudImageGoogle}
 \end{figure}
@@ -76,6 +87,8 @@ The amount of sensors used to detect objects around the vehicle and its surround
 
 \begin{figure}
 %TODO: \includegraphics[height=1in, width=1in]{fly}
+\centering
+\includegraphics[width=1\linewidth]{Figures/DecisonMaking.pdf}
 \caption{Abstract representation of decision making in autonomous vehicles composed from various sources (cf.  \cite{EarthImagingJournalEIJ:RemoteSensingSatelliteImages2012,Waldrop2015,Waymo2017technology,Tesla2016_upgrade})}
 \label{fig:DecisionMaking}
 \end{figure}
@@ -256,7 +269,84 @@ The approach based on \enquote{learning by experience} and \enquote{Proven in us
 \label{sec:Conclusion}
 
 
-\textbf{[TABLE COMES HERE]}
+%\textbf{[TABLE COMES HERE]}
+
+\begin{table*}
+	%\vspace{-1.5em}
+	\centering
+	\caption{Nice caption here}
+	%	\vspace{-8pt}
+	\label{tab:Findings}
+	\begin{small}
+		\begin{supertabular}{>{}p{.02\textwidth}|>{\raggedright}p{.105\textwidth}>{\raggedright}p{.4\textwidth}>{\raggedright}p{.4\textwidth}}
+			\toprule
+			 & {Challenge} & {Findings} & {Recommendations}  \tabularnewline
+			\midrule
+			\multirow{40}{*}{{\rotatebox[origin=r]{90}{Technical challenges}}} &Safety & 
+					\begin{itemize}
+					\item Tradeoff between safety and other aspects like economic aspects
+					\item Boundaries of autonomy of Self-driving cars and human (passenger) interactions
+					\item Police control and possibility of intervention with self-driving cars
+					\item Technology to guarantee safety and organizations (regulations, authorities, safety culture) to assure safety
+					\end{itemize}
+ 			& 
+					\begin{itemize}
+					\item Means to guarantee that safety is not sacrified because of other aspects (this is not so different from today. This can happen also for the breaking system of non-autonomous cars)
+					\item It should be specified how a self-driving car will behave in cases that the car is not able to deal autonomously. In the future it will not make sense to expect that passengers will be able to drive a car. 
+					\item There is the need of clarifying the relationship of police and self-driving cars.
+					\item The current techniques and standards to guarantee safety are not ready for self-driving cars and cars that will update their software even when they are already on the road.
+					\end{itemize} 			
+ 			 \tabularnewline \cmidrule{2-4}
+			& Security vs Safety & 
+					\begin{itemize}
+					\item ...
+					\item ...
+					\item ...
+					\item ...
+					\end{itemize}					  & 
+					\begin{itemize}
+					\item ...
+					\item ...
+					\item ...
+					\item ...
+					\end{itemize}										 
+ 			 \tabularnewline \cmidrule{2-4}
+			& Privacy vs Safety & ...  & ...  
+ 			 \tabularnewline \cmidrule{2-4}
+			& Trust & ...  & ... 
+ 			 \tabularnewline \cmidrule{2-4}
+			& Transparency & ...  & ...  
+ 			 \tabularnewline \cmidrule{2-4}
+			& Reliability & ...  & ...  
+ 			 \tabularnewline \cmidrule{2-4}
+			& Responsibility and accountability & ...  & ...  
+ 			 \tabularnewline \cmidrule{2-4}
+			& Quality Assurance Process & ...  & ...  
+			\tabularnewline \cmidrule{1-4}
+			\multirow{3}{*}{{\rotatebox[origin=r]{90}{Non Technical challenges}}} &Social Challenges & 
+					\begin{itemize}
+					\item ...
+					\item ...
+					\item ...
+					\item ...
+					\end{itemize}
+ 			& 	
+					\begin{itemize}
+					\item ...
+					\item ...
+					\item ...
+					\item ...
+					\end{itemize} 
+			\tabularnewline \cmidrule{2-4}
+			& Stakeholders - General Public Interests & ...  & ...  
+ 			 \tabularnewline \cmidrule{2-4}
+			& Selling Points & ...  & ...  
+ 			 \tabularnewline 			 																							
+			\bottomrule
+		\end{supertabular}
+	\end{small}
+	
+\end{table*}
 
 
 Autonomous vehicles have been recognized as the future of transportation systems \cite{EthicsCommission2017pr,Pillath2016,NHTSA2016PolicyUpdate} and will be successively introduced into the transport systems globally. It is now the right time to start an investigation into the manifold of ethical challenges surrounding autonomous and driver-less and connected vehicles \cite{EthicsCommission2017b}. As this new technology is being tested and gradually introduced under controlled conditions, the focus should be on the practical technological solutions and their social consequences, rather than on idealized unsolvable problems such as trolley problem. We can compare with the development and introduction of first cars. If the developers of traditional driver-controlled cars asked about general responsibility of a human driver for traffic accidents before allowing them to enter traffic, they would never be accepted, as safety in general and under all circumstances cannot be guaranteed and indeed human factor is the major safety concern. 
