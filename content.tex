@@ -55,7 +55,8 @@ Developing self-driving cars that act without a driver means to replace a human,
 \begin{figure}
 %TODO: \includegraphics[height=1in, width=1in]{fly}
 \centering
-\includegraphics[width=1\linewidth]{Figures/comparisonHuman_Computers_Sense.pdf}
+%\includegraphics[width=1\linewidth]{Figures/comparisonHuman_Computers_Sense.pdf}
+\includegraphics[width=1\linewidth]{Figures/Figures_V20171008_SenseDecideAct.pdf}
 \caption{Comparison of human and computers sense, think and act process (cf. \cite{Ghisio2016}) which we extended by adding a feedback loop}
 \label{fig:ComparisonHumanComputerProcess}
 \end{figure}
@@ -88,18 +89,19 @@ The amount of sensors used to detect objects around the vehicle and its surround
 \begin{figure}
 %TODO: \includegraphics[height=1in, width=1in]{fly}
 \centering
-\includegraphics[width=1\linewidth]{Figures/DecisonMaking.pdf}
+%\includegraphics[width=1\linewidth]{Figures/DecisonMaking.pdf}
+\includegraphics[width=1\linewidth]{Figures/Figures_V20171008_DecisionMaking.pdf}
 \caption{Abstract representation of decision making in autonomous vehicles composed from various sources (cf.  \cite{EarthImagingJournalEIJ:RemoteSensingSatelliteImages2012,Waldrop2015,Waymo2017technology,Tesla2016_upgrade})}
 \label{fig:DecisionMaking}
 \end{figure}
 
-Most of the functionality in the automotive domain is based on software \cite{Broy2007}. Software is written by software engineers and at least for important components extensively tested to ensure their correct functioning. In driver-less cars software relies on different disciplines, such as computer vision, machine learning, and parallel computing, but also on various external services. It is a complex process to calculate a decision, and it is also difficult to test those against all possible real world scenarios \cite{Waldrop2015} \textbf{[CHECK REFERENCE]}. %TODO CHECK REFERENCE 
+Most of the functionality in the automotive domain is based on software \cite{Broy2007}. Software is written by software engineers and at least for important components extensively tested to ensure their correct functioning. In driver-less cars software relies on different disciplines, such as computer vision, machine learning, and parallel computing, but also on various external services. It is a complex process to calculate a decision, and it is also difficult to test those against all possible real world scenarios \cite{Waldrop2015}. \todo{[CHECK REFERENCE]}
 
 One of the problems is that all calculations are based on an abstraction of the real world. This abstraction is an incomplete representation of a real world situation and thus the decision making will create decisions for an imperfect world. This is a twofold problem, because the more information is available the better the decisions might be, but at the same time more interpretation and filtering might have to be used to get the data that actually is useful for the decision making. 
 
 Engineers might have to decide what kind of data they use, how reliable or trustworthy the data is and how they balance the different sources of information in their algorithms. Also different sensors might have their specific limitations and to overcome those, a combination of multiple sensors might be used. The overall problem is usually referred to as sensor fusion. This problem is acerbated in the case of connected vehicles since data will come not only from sensors of the car, but also from other vehicles, street infrastructure, etc. In this case other factors should be taken into account since it is not possible to have a perfect knowledge about the devices that are used to sense information and about their status.
 
-Imagine heavy weather conditions, the navigation reports a street ahead, the radar is reporting a clear street, but the visual camera reports an obstacle straight ahead. How will this “equation” be solved and what will be the result? The wrong decision might lead to an accident, when important information of some sensors is disregarded and other sensors do not detect the obstacle or hazard in front of the vehicle \cite{Tesla2016_tragicloss}. Car manufacturers are constantly improving and testing the recognition capabilities of their systems \cite{Tesla2016_upgrade}. It is a multi-factor optimization task, which aims to find an optimal solution under consideration of costs, quality, and potential risk factors.
+Imagine heavy weather conditions, the navigation reports a street ahead, the radar is reporting a clear street, but the visual camera reports an obstacle straight ahead. How will this \enquote{equation} be solved and what will be the result? The wrong decision might lead to an accident, when important information of some sensors is disregarded and other sensors do not detect the obstacle or hazard in front of the vehicle \cite{Tesla2016_tragicloss}. Car manufacturers are constantly improving and testing the recognition capabilities of their systems \cite{Tesla2016_upgrade}. It is a multi-factor optimization task, which aims to find an optimal solution under consideration of costs, quality, and potential risk factors.
 
 Some manufacturers are thinking to count miles covered without any accident, however this might be in-feasible since a vehicle should cover around 11 billion of miles to demonstrate with 95\% of confidence and 80\% power that autonomous vehicle failure rate is lower than the human driver failure rate \cite{KALRA2016182}. Moreover, this calculation holds if the software within the car does not change over time. Nowadays, manufacturer are increasingly interested in continuous integration and deployment techniques that promise to update the software even after the vehicle as been sold and is on the street, like a common smart-phone. However, changing even a single line of code might require to starting counting from 0 the number of covered miles.
 
@@ -148,13 +150,13 @@ For autonomous cars, security is of paramount importance, and software security 
 
 Similar documents are mentioned, such as Microsoft Security Development Lifecycle (SDL); SAFE Code best practices; OWASP Comprehensive, lightweight application security process (CLASP) and HMG Security policy framework \cite{DepartmentforTransportDfT2017}.
 
-There have been a number of attacks at car systems and sensors (LIDAR, GPS) that were used to manipulate the cars behaviour. Attacks might be inevitable, but should there be a minimum security threshold to allow a driverless car to be used? This leads to another question: How secure must the systems and the connections be? 
+There have been a number of attacks at car systems and sensors (LIDAR, GPS) that were used to manipulate the cars behaviour. Attacks might be inevitable, but should there be a minimum security threshold to allow a driver-less car to be used? This leads to another question: How secure must the systems and the connections be? 
 
 In aircrafts \enquote{black boxes} are used to determine what happened after a crash. Should this be also a part of a driver-less car? 
 
 What about security issues and software updates? Should a driver-less car be allowed to drive, when it does not have the latest software version running? What about bugs in the new software?
 
-Should the vehicle be connected or should the vehicle be completely disconnected? On one side, the most secure system is the one that is disconnected from the network. On the side, it would be unethical to do not deploy immediately new software or a new version of the software on the car if there is some evidence that the new update will fix important problems that might endanger human lives. This is for instance envisioned by the CEO of Tesla, Elon Musk, in the Tesla's second 10 year master plan ``part deux", where the third element of the 4 major elements is: develop a vehicle self-driving capability that is 10x safer than manual via massive fleet learning\footnote{\url{https://www.tesla.com/blog/master-plan-part-deux}}.
+Should the vehicle be connected or should the vehicle be completely disconnected? On one side, the most secure system is the one that is disconnected from the network. On the side, it would be unethical to do not deploy immediately new software or a new version of the software on the car if there is some evidence that the new update will fix important problems that might endanger human lives. This is for instance envisioned by the CEO of Tesla, Elon Musk, in the Tesla's second 10 year master plan \enquote{part deux}, where the third element of the 4 major elements is: develop a vehicle self-driving capability that is 10x safer than manual via massive fleet learning\footnote{\url{https://www.tesla.com/blog/master-plan-part-deux}}.
 In order to enable the massive fleet learning and to do the software update, connectivity is needed. Moreover, connected vehicles might receive information from other systems that will enhance the understanding of the reality thus opening new and promising safety scenarios. Imagine, for instance, a pedestrian on a side of a building, totally invisible to the instrumentations of the car, that is approaching a cross and that will most probably have an impact with the vehicle \footnote{\url{https://www.youtube.com/watch?v=w0rPQpjZhxg}}. 
 
 
@@ -167,7 +169,7 @@ What about using active signals by devices people carry around to detect moving 
 
 And how much data is actually used for evaluation? Is it anonymous? Does it contain more data than \enquote{just} the position of a human? Can it be connected to other types of data like the phone number, the bank account, the credit cards, personal details, or health data?
 
-Those and similar questions are met by legislation such as Regulation (EU) 2016/679 of the European Parliament and of the Council1 (the General Data Protection Regulation) setting a legal framework to protect personal data \cite{EuropeanUnion2016}, and discussed in \cite{doi:10.1093/idpl/ipx005}.
+Those and similar questions are met by legislation such as Regulation (EU) 2016/679 of the European Parliament and of the Council (the General Data Protection Regulation) setting a legal framework to protect personal data \cite{EuropeanUnion2016}, and discussed in \cite{doi:10.1093/idpl/ipx005}.
 
 
 \subsection{Trust}
@@ -196,7 +198,7 @@ The Department of Motor Vehicles provides the law requirements \cite{Departmento
 
 How reliable is the cell network? What if there is no mobile network available? What if sensor(s) fail? Should there be redundancy for everything? Is there a threshold that determines when the car is reliable, e.g., when two out of four sensors fail?  
 
-In connected vehicles that are different levels that should be considered for reliability purposes. First the diagnostic of the vehicle that might be subject to failures. Then, the vehicle sensors that enable the vehicle to sense the surrounding environment of the vehicle. Finally, the data coming from external entities, like other vehicles and road infrastructures. Reliability approaches should consider all these levels.
+In connected vehicles there are different levels that should be considered for reliability purposes. First the diagnostic of the vehicle that might be subject to failures. Then, the vehicle sensors that enable the vehicle to sense the surrounding environment of the vehicle. Finally, the data coming from external entities, like other vehicles and road infrastructures. Reliability approaches should consider all these levels.
 
 
 \subsection{Responsibility and Accountability}
@@ -211,7 +213,7 @@ How will responsibility be defined in case of incidents and accidents? Regarding
 How do engineers ensure high quality components? How is the decision making implemented? How to ensure certain quality? What about the lifetime of components? How will maintenance be organized and quality assured?
 When car manufacturers follow a non-transparent process of software engineering, how could anyone make sure that the car follows a certain ethical guideline? Whose responsibility will it be that car software follows ethical principles?
 
-One part of the QA process regards assembling of components. All parts of a vehicle are designed, fabricated and then assembled to the overall car. A standard non-autonomous premium vehicle today has around 80 electronic control units that are responsible for the control of e.g., the engine, the wipers, the navigation system or the dashboard \cite{BoschGmbH2013}. We assume that for autonomous vehicles the number will be increased. Parts are usually built by not one, but a multitude of suppliers. This requires an extensive design and development process, which again involves various disciplines, such as requirements engineering, software engineering or project management. It is an overall extensive process which holds ethical questions and challenges. Thus, it is necessary to include ethical deliberations in the overall process but also in all sub processes. As in \cite{Sapienza2016a} stated: \enquote{value-based ethical aspects, which today are implicit, should be made visible in the course of design and development of technical systems, and thus a subject of scrutiny}. 
+One part of the QA \todo{introduce QA} process regards assembling of components. All parts of a vehicle are designed, fabricated and then assembled to the overall car. A standard non-autonomous premium vehicle today has around 80 electronic control units that are responsible for the control of e.g., the engine, the wipers, the navigation system or the dashboard \cite{BoschGmbH2013}. We assume that for autonomous vehicles the number will be increased. Parts are usually built by not one, but a multitude of suppliers. This requires an extensive design and development process, which again involves various disciplines, such as requirements engineering, software engineering or project management. It is an overall extensive process which holds ethical questions and challenges. Thus, it is necessary to include ethical deliberations in the overall process but also in all sub processes. As in \cite{Sapienza2016a} stated: \enquote{value-based ethical aspects, which today are implicit, should be made visible in the course of design and development of technical systems, and thus a subject of scrutiny}. 
 
 Including ethics-aware decision making in all processes will help to make ethically justified decisions. This is important when it comes to questions: Which parts/components are used for a vehicle? Can we choose a cheaper component with less accuracy instead? Is the reliability of this part high enough for a driver-less car?
 
@@ -263,7 +265,7 @@ On 14 April 2016 EU member states endorsed the Declaration of Amsterdam \cite{Go
  
 The question is thus how to ensure that autonomous cars will be built upon ethical guidelines, which will be accepted by society. The strategy is to rely on rigorously monitoring the behaviour of cars, while the details of implementation are responsibility of producers. That means among others that design and implementation of software should follow ethical guidelines. An example of ethical guidelines trying to think one step further is described by Sarah Spiekermann's book Ethical IT innovation \cite{spiekermann2015ethical}. 
 
-The approach based on \enquote{learning by experience} and \enquote{Proven in use} argument \cite{GovernmentNL2017,NationalInstruments2014a,DBLP:journals/corr/SchabeB15} presupposes a functioning socio-technological assurance system that has strong coupling among legislation, guidelines, standards and use and promptly adapts to lessons learned. Ethical analysis in \cite{DodigCrnkovic2012, Thekkilakattil_7273594,Johnsen2017_7958474} [28-30] addresses this problem of establishing and maintaining a functioning learning socio-technological system while \cite{Johnsen2017_7958474} discusses why functional safety standards are not enough.
+The approach based on \enquote{learning by experience} and \enquote{Proven in use} argument \cite{GovernmentNL2017,NationalInstruments2014a,DBLP:journals/corr/SchabeB15} presupposes a functioning socio-technological assurance system that has strong coupling among legislation, guidelines, standards and use and promptly adapts to lessons learned. Ethical analysis in \cite{DodigCrnkovic2012, Thekkilakattil_7273594,Johnsen2017_7958474} addresses this problem of establishing and maintaining a functioning learning socio-technological system while \cite{Johnsen2017_7958474} discusses why functional safety standards are not enough.
 
 
 \section{Conclusion and final Remarks}
@@ -275,7 +277,7 @@ The approach based on \enquote{learning by experience} and \enquote{Proven in us
 \begin{table*}
 	%\vspace{-1.5em}
 	\centering
-	\caption{Nice caption here}
+	\caption{Summary of Findings and Recommendations grouped by Challenges}
 	%	\vspace{-8pt}
 	\label{tab:Findings}
 	\begin{small}
@@ -285,14 +287,14 @@ The approach based on \enquote{learning by experience} and \enquote{Proven in us
 			\midrule
 			\multirow{40}{*}{{\rotatebox[origin=r]{90}{Technical challenges}}} &Safety & 
 					\begin{itemize}
-					\item Tradeoff between safety and other aspects like economic aspects
+					\item Trade-off between safety and other aspects like economic aspects
 					\item Boundaries of autonomy of Self-driving cars and human (passenger) interactions
 					\item Police control and possibility of intervention with self-driving cars
 					\item Technology to guarantee safety and organizations (regulations, authorities, safety culture) to assure safety
 					\end{itemize}
  			& 
 					\begin{itemize}
-					\item Means to guarantee that safety is not sacrified because of other aspects (this is not so different from today. This can happen also for the breaking system of non-autonomous cars)
+					\item Means to guarantee that safety is not sacrificed because of other aspects (this is not so different from today. This can happen also for the breaking system of non-autonomous cars)
 					\item It should be specified how a self-driving car will behave in cases that the car is not able to deal autonomously. In the future it will not make sense to expect that passengers will be able to drive a car. 
 					\item There is the need of clarifying the relationship of police and self-driving cars.
 					\item The current techniques and standards to guarantee safety are not ready for self-driving cars and cars that will update their software even when they are already on the road.
@@ -302,39 +304,80 @@ The approach based on \enquote{learning by experience} and \enquote{Proven in us
 					\begin{itemize}
 					\item ...
 					\item ...
-					\item ...
-					\item ...
 					\end{itemize}					  & 
 					\begin{itemize}
 					\item ...
 					\item ...
-					\item ...
-					\item ...
 					\end{itemize}										 
  			 \tabularnewline \cmidrule{2-4}
-			& Privacy vs Safety & ...  & ...  
+			& Privacy vs Safety & 
+				\begin{itemize}
+					\item Trade-off between privacy and data collection/recording
+					\item Use of technology that detects humans near/around the car, even if those humans do not carry any kind of electronics  
+					\item ...
+				\end{itemize}					  & 
+				\begin{itemize}
+					\item Following/applying legal frameworks to protect personal data, such as Regulation (EU) 2016/679 of the European Parliament \cite{EuropeanUnion2016} (discussed in \cite{doi:10.1093/idpl/ipx005})
+					\item ...
+					\item ...
+				\end{itemize}	
  			 \tabularnewline \cmidrule{2-4}
-			& Trust & ...  & ... 
+			& Trust & 
+				\begin{itemize}
+					\item How trust between components of complex systems can be implemented is not clear.
+				\end{itemize}					  & 
+				\begin{itemize}
+					\item Further research on how to implement trust across multiple systems. 
+					\item Provide trust between human and car.
+					\item Provide trust between car and components as well as external services.
+				\end{itemize}
  			 \tabularnewline \cmidrule{2-4}
-			& Transparency & ...  & ...  
+			& Transparency & 
+                \begin{itemize}
+					\item Transparency is a prerequisite for the herein introduced challenges, since it is the key to potentially undisclosed background information.
+					\item ...
+				\end{itemize}					  & 
+				\begin{itemize}
+					\item Ensure transparency and provide insight into decision making
+					\item ...
+				\end{itemize}
  			 \tabularnewline \cmidrule{2-4}
-			& Reliability & ...  & ...  
+			& Reliability & 
+				\begin{itemize}
+					\item Different levels to be considered for reliability purposes (diagnostics, vehicle input sensors, and external services) 
+					\item ...
+				\end{itemize}					  & 
+				\begin{itemize}
+					\item ...
+					\item ...
+				\end{itemize}
  			 \tabularnewline \cmidrule{2-4}
-			& Responsibility and accountability & ...  & ...  
+			& Responsibility and accountability & 
+				\begin{itemize}
+					\item ...
+					\item ...
+				\end{itemize}                   & 
+				\begin{itemize}
+					\item ...
+					\item ...
+				\end{itemize}
  			 \tabularnewline \cmidrule{2-4}
-			& Quality Assurance Process & ...  & ...  
+			& Quality Assurance Process & 
+				\begin{itemize}
+					\item ...
+					\item ...
+				\end{itemize}                   & 
+				\begin{itemize}
+					\item ...
+					\item ...
+				\end{itemize}
 			\tabularnewline \cmidrule{1-4}
 			\multirow{3}{*}{{\rotatebox[origin=r]{90}{Non Technical challenges}}} &Social Challenges & 
 					\begin{itemize}
 					\item ...
 					\item ...
-					\item ...
-					\item ...
-					\end{itemize}
- 			& 	
+					\end{itemize}               & 	
 					\begin{itemize}
-					\item ...
-					\item ...
 					\item ...
 					\item ...
 					\end{itemize} 
