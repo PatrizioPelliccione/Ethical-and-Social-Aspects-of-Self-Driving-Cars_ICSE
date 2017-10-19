@@ -1,13 +1,13 @@
 \section{Introduction}
 
-\patrizio{command for my comments}
-\gordana{command for Gordana comments}
-\tobias{command for Tobias comments}
-\todo{For todo}
-\ins{Something to be added}\\
-\del{something to be deleted}\\
-\chg{something to be changed into}{that text}\\
-\ugh{something strange}\\
+%\patrizio{command for my comments}
+%\gordana{command for Gordana comments}
+%\tobias{command for Tobias comments}
+%\todo{For todo}
+%\ins{Something to be added}\\
+%\del{something to be deleted}\\
+%\chg{something to be changed into}{that text}\\
+%\ugh{something strange}\\
 
 Increasingly, prototypical self-driving vehicles are participating in public traffic~\cite{Persson2014} and are planned to be sold starting in 2020~\cite{Toyota2015,Stoll_WSJ_2016}. Public awareness and media coverage contribute to a manifold of discussions about self-driving vehicles. This is currently amplified through recent accidents with autonomous vehicles~\cite{Tesla2016_tragicloss,Dolgov2016}. 
 
@@ -15,7 +15,7 @@ Software is playing a key role in modern vehicles and in self-driving vehicles. 
 
 Moreover, self-driving vehicles will be connected with other vehicles, with the manufacturer cloud, e.g., for software upgrades, with Intelligent Transport Systems (ITS), Smart Cities, and Internet of Things (IoT). Self-driving vehicles will combine data from inside vehicle with external data coming from the environment (other vehicles, the road, signs, and the cloud). In such a scenario, different applications will be possible: smart traffic control, better platooning coordination, and enhanced safety in general.
 However, the basic assumption is that future self-driving connected cars must be socially sustainable.
-A typical discussion about ethical aspects of self-driving cars starts with ethical thought experiment, so called \enquote{trolley problem} described in~\cite{Foot1967} and~\cite{Wintersberger2017}, that has been discussed in number of articles in IEEE~\cite{7948873,Goodall2016,Ackerman2016}, ACM~ \cite{McBride:2016:EDC:2874239.2874265,Kirkpatrick:2015:MCD:2808213.2788477,Frison:2016:FPT:3004323.3004336}, Scientific American~\cite{Greenemeier2016,Deamer2016,Kuchinskas2013}, Science~\cite{Bonnefon2016,Greene2016_1514}, other high-profile journals \cite{2016arXiv160608813G_GoodmanFlaxman, Coca-Vila2017}, conference workshops~\cite{Riener:2016:WEI:3004323.3005687,Alavi:2017:DCW:3064857.3079155} and other sources \cite{MoralMachine2016,Mooney2016,Achenbach2015}. Here is the \ins{general} scenario being discussed:
+A typical discussion about ethical aspects of self-driving cars starts with ethical thought experiment, so called \enquote{trolley problem} described in~\cite{Foot1967} and~\cite{Wintersberger2017}, that has been discussed in number of articles in IEEE~\cite{7948873,Goodall2016,Ackerman2016}, ACM~ \cite{McBride:2016:EDC:2874239.2874265,Kirkpatrick:2015:MCD:2808213.2788477,Frison:2016:FPT:3004323.3004336}, Scientific American~\cite{Greenemeier2016,Deamer2016,Kuchinskas2013}, Science~\cite{Bonnefon2016,Greene2016_1514}, other high-profile journals \cite{2016arXiv160608813G_GoodmanFlaxman, Coca-Vila2017, goodall2014vehicle}, conference workshops~\cite{Riener:2016:WEI:3004323.3005687,Alavi:2017:DCW:3064857.3079155} and other sources \cite{MoralMachine2016,Mooney2016,Achenbach2015}. Here is the \ins{general} scenario being discussed:
 
 \textit{
 A self-driving vehicle drives on a street with a high speed. In front of the vehicle a group of people suddenly blocks the street. The vehicle is too fast to stop before it reaches the group. If the vehicle does not react immediately, the whole group will be killed. The car could however evade the group by entering the pedestrian way and consequently killing a previously not involved pedestrian. \ins{The following alternations of the problem exist}: (A) Replacing the pedestrian with a concrete wall, which in consequence will kill the passenger of the self-driving car; (B) Varying the personas of people in the group, the single pedestrian or the passenger \del{can be used as an alteration}. The use of personas allows including an emotional perspective~\cite{BleskeRechek2010}, e.g., stating that the single pedestrian is a child, a relative, a very old or a very sick human, or a brutal dictator, who killed thousands of people.}
@@ -36,7 +36,7 @@ In order to give a more detailed perspective on the complex decision making proc
 
 Focusing on important ethical challenges that should currently be addressed and solved is an important step before ethical aspects of self-driving cars can actually be meaningfully discussed from the point of view of societal and individual stakeholders as well as designers and producers. It is important to focus not on abstract thought experiments but on concrete conditions that influence the behavior of self-driving cars and their safety as well as our expectations from them.
 
-The paper is structured as follows. A short introduction to self-driving cars and their current state of the art is provided in Section~\ref{sec:SelfDrivingCarsBasics}, with the emphasis on the description of the decision making principles given in Section~\ref{sec:SelfDrivingCarsBasics:DecisionMakingProcess} and the role of software in Section~\ref{sec:SelfDrivingCarsBasics:ComplexityOfDecisionMaking}. Ethical and social challenges are addressed in Section~\ref{sec:EAofTC} regarding technical aspects, and Section~\ref{sec:EAofNONTC} addressing non-technical aspects. Section~\ref{sec:LegislationStandardGuidelines} describes the current state of norms and standards, while conclusions and final remarks are  presented together with recommendations in Section~\ref{sec:Conclusion}.
+The paper is structured as follows. A short introduction to self-driving cars and their current state of the art is provided in Section~\ref{sec:SelfDrivingCarsBasics}, with the emphasis on the description of the decision making principles given in Section~\ref{sec:SelfDrivingCarsBasics:DecisionMakingProcess} and the role of software in Section~\ref{sec:SelfDrivingCarsBasics:ComplexityOfDecisionMaking}. Ethical and social challenges are addressed in Section~\ref{sec:EAofTC} regarding technical aspects, and Section~\ref{sec:EAofNONTC} addressing non-technical aspects. Section~\ref{sec:LegislationStandardGuidelines} describes the current state of norms and standards, while conclusions and final remarks are  presented together with recommendations in Section~\ref{sec:Conclusions}.
 
 
 \section{Self-Driving Cars Basics}
@@ -236,7 +236,7 @@ This in itself poses ethical problems: what strategy should be applied for peopl
 \subsection{Stakeholders - General Public Interests}
 \label{sec:EAofNONTC:Stakeholders}
 
-Humans concerns must be taken into account in the decision making of self-driving cars. \chg{Should there be an emergency button to the car like an emergency brake in a train?}{Should there be an emergency button to allow the human to interfere with the decision making of the self-driving car?} In the context of the car the computer decision might be better, but it might also be worse than human, because of possible errors \cite{Eckstein2016}.
+Humans concerns must be taken into account in the decision making of self-driving cars. \chg{Should there be an emergency button to the car like an emergency brake in a train?}{Should there be an emergency button to allow the human to interfere with the decision making of the self-driving car?} \ins{Putting the human back in the loop of decision making also inflicts with the autonomy of the system. Is it then truly self-driving? Giving passengers a choice to interfere with the decisions of the self-driving car puts the passenger back in charge, who would be responsible to press or not press the button in all situations}. In the context of the self-driving car the computer decision might be better, but it might also be worse than human, because of possible errors \cite{Eckstein2016}.
 %\ins{However, a train operates in a partially controlled environment, then the train can stop without any consequence. This does not hold for cars. A car suddenly stopping might create accidents.}
 
 Another perspective on the human interest is the granularity of the settings or configurations given to the user. How for example will a route be planned? The user could mark the route on a virtual map or the route could always be determined by a computer system. The latter might choose a route that follows guidelines to ensure maximum efficiency and balanced traffic flows in an area. However, routes with maximum advertisement next to the street or with certain shops or attractions could also be preferred over others. 
@@ -282,7 +282,12 @@ It is also the right time to discuss the border between what is technically poss
 
  HERE WE ARE MISSING THREE SENTENCES ABOUT SOFTWARE ENGINEERING. 
  HERE WE ARE MISSING THREE SENTENCES ABOUT SOFTWARE ENGINEERING. 
-HERE WE ARE MISSING THREE SENTENCES ABOUT SOFTWARE ENGINEERING. 
+ HERE WE ARE MISSING THREE SENTENCES ABOUT SOFTWARE ENGINEERING. 
+ HERE WE ARE MISSING THREE SENTENCES ABOUT SOFTWARE ENGINEERING. 
+ HERE WE ARE MISSING THREE SENTENCES ABOUT SOFTWARE ENGINEERING. 
+ 
+
+
 
 \begin{table*}
 	%\vspace{-1.5em}
