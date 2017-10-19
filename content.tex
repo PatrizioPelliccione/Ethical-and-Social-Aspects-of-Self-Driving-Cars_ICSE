@@ -15,8 +15,8 @@ Software is playing a key role in modern vehicles and in self-driving vehicles. 
 
 Moreover, self-driving vehicles will be connected with other vehicles, with the manufacturer cloud, e.g., for software upgrades, with Intelligent Transport Systems (ITS), Smart Cities, and Internet of Things (IoT). Self-driving vehicles will combine data from inside vehicle with external data coming from the environment (other vehicles, the road, signs, and the cloud). In such a scenario, different applications will be possible: smart traffic control, better platooning coordination, and enhanced safety in general.
 However, the basic assumption is that future self-driving connected cars must be socially sustainable.
-A typical discussion about ethical aspects of self-driving cars starts with ethical thought experiment, so called \enquote{trolley problem} described in~\cite{Foot1967} and~\cite{Wintersberger2017}, that has been discussed in number of articles in IEEE, ACM, Scientific American, Science, and other high-profile journals \cite{2016arXiv160608813G_GoodmanFlaxman, Greene2016_1514, Bonnefon2016, MoralMachine2016, Mooney2016, Ackerman2016}. Here is the scenario being discussed:
-%\ugh{[31-38]} removed 2 references here, since they were referring to Bonnefon2016
+A typical discussion about ethical aspects of self-driving cars starts with ethical thought experiment, so called \enquote{trolley problem} described in~\cite{Foot1967} and~\cite{Wintersberger2017}, that has been discussed in number of articles in IEEE~\cite{7948873,Goodall2016,Ackerman2016}, ACM~ \cite{McBride:2016:EDC:2874239.2874265,Kirkpatrick:2015:MCD:2808213.2788477,Frison:2016:FPT:3004323.3004336}, Scientific American~\cite{Greenemeier2016,Deamer2016,Kuchinskas2013}, Science~\cite{Bonnefon2016,Greene2016_1514}, other high-profile journals \cite{2016arXiv160608813G_GoodmanFlaxman, Coca-Vila2017}, conference workshops~\cite{Riener:2016:WEI:3004323.3005687,Alavi:2017:DCW:3064857.3079155} and other sources \cite{MoralMachine2016,Mooney2016,Achenbach2015}. Here is the scenario being discussed:
+%\ugh{[31-38]} removed 2 references here, since they were just reporting about Bonnefon2016.
 
 \textit{
 A self-driving vehicle drives on a street with a high speed. In front of the vehicle a group of people suddenly blocks the street. The vehicle is too fast to stop before it reaches the group. If the vehicle does not react immediately, the whole group will be killed. The car could however evade the group by entering the pedestrian way and consequently killing a previously not involved pedestrian. There are the following options\patrizio{do we mean that there exist some variants of the problem?}: (A) Replacing the pedestrian with a concrete wall, which in consequence will kill the passenger of the self-driving car; (B) Varying the personas of people in the group, the single pedestrian or the passenger can be used as an alteration. The use of personas allows including an emotional perspective~\cite{BleskeRechek2010}, e.g., stating that the single pedestrian is a child, a relative, a very old or a very sick human, or a brutal dictator, who killed thousands of people.}
@@ -337,40 +337,53 @@ HERE WE ARE MISSING THREE SENTENCES ABOUT SOFTWARE ENGINEERING.
  		     \tabularnewline \cmidrule{2-4}
 			& Privacy & 
 				\vspace{-8pt}
-				\begin{itemize}
-					\item Trade-off between privacy and data collection/recording
-					\item Use of technology that detects humans near/around the car, even if those humans do not carry any kind of electronics  
-				\end{itemize}
+				%\begin{itemize}
+				%	\item 
+				\noindent $\bullet$ Trade-off between privacy and data collection/recording
+				%	\item 
+				\noindent $\bullet$ Use of technology that detects humans near/around the car, even if those humans do not carry any kind of electronics  
+				%\end{itemize}
 			& 
 				\vspace{-8pt}
-				\begin{itemize}
-					\item Following/applying legal frameworks to protect personal data, such as Regulation (EU) 2016/679 of the European Parliament \cite{EuropeanUnion2016} (discussed in \cite{doi:10.1093/idpl/ipx005})
-					\item Justify the use of collected data through a transparent decision making process.
-				\end{itemize}	
+				%\begin{itemize}
+				%	\item 
+				\noindent $\bullet$ Following/applying legal frameworks to protect personal data, such as Regulation (EU) 2016/679 of the European Parliament \cite{EuropeanUnion2016} (discussed in \cite{doi:10.1093/idpl/ipx005})
+				%	\item 
+				\noindent $\bullet$ Justify the use of collected data through a transparent decision making process.
+				%\end{itemize}	
  			 \tabularnewline \cmidrule{2-4}
 			& Trust & 
-				\begin{itemize}
-					\item How trust between both software and hardware components of complex systems can be implemented is not clear.
-				\end{itemize}
+				%\begin{itemize}
+				%	\item 
+				\noindent $\bullet$ How trust between both software and hardware components of complex systems can be implemented is not clear.
+				%\end{itemize}
 			& 
-				\begin{itemize}
-					\item Further research on how to implement trust across multiple systems. 
-					\item Provide trusted connections between components as well as external services.
-				\end{itemize}
+				%\begin{itemize}
+				%	\item 
+				\noindent $\bullet$ Further research on how to implement trust across multiple systems. 
+				%	\item 
+				\noindent $\bullet$ Provide trusted connections between components as well as external services.
+				%\end{itemize}
  			 \tabularnewline \cmidrule{2-4}
 			& Transparency & 
-                \begin{itemize}
+               % \begin{itemize}
 				
-					\item Information disclosure, what and to whom
-					\item Transparency of the ecosystem
-					\item Management of intellectual property rights
-				\end{itemize}
+				%	\item 
+				\noindent $\bullet$ Information disclosure, what and to whom
+				%	\item 
+				\noindent $\bullet$ Transparency of the ecosystem
+				%	\item 
+				\noindent $\bullet$ Management of intellectual property rights
+				%\end{itemize}
 			& 
-				\begin{itemize}
-					\item Ensure transparency and provide insight into decision making.
-					\item Actively share knowledge, gained by \enquote{learning through experience}, to ensure the interoperability of systems and services.
-						\item Transparency is a prerequisite for the herein introduced challenges, since it is the key to potentially undisclosed background information.
-				\end{itemize}
+				%\begin{itemize}
+				%	\item 
+				\noindent $\bullet$ Ensure transparency and provide insight into decision making.
+				%	\item 
+				\noindent $\bullet$ Actively share knowledge, gained by \enquote{learning through experience}, to ensure the interoperability of systems and services.
+				%		\item 
+				\noindent $\bullet$ Transparency is a prerequisite for the herein introduced challenges, since it is the key to potentially undisclosed background information.
+				%\end{itemize}
  			 \tabularnewline \cmidrule{2-4}
 			& Reliability & 
 				\begin{itemize}
