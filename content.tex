@@ -15,7 +15,7 @@ Software is playing a key role in modern vehicles and in self-driving vehicles. 
 
 Moreover, self-driving vehicles will be connected with other vehicles, with the manufacturer cloud, e.g., for software upgrades, with Intelligent Transport Systems (ITS), Smart Cities, and Internet of Things (IoT). Self-driving vehicles will combine data from inside vehicle with external data coming from the environment (other vehicles, the road, signs, and the cloud). In such a scenario, different applications will be possible: smart traffic control, better platooning coordination, and enhanced safety in general.
 However, the basic assumption is that future self-driving connected cars must be socially sustainable.
-A typical discussion about ethical aspects of self-driving cars starts with ethical thought experiment, so called \enquote{trolley problem} described in~\cite{Foot1967} and~\cite{Wintersberger2017}, that has been discussed in number of articles in IEEE~\cite{7948873,Goodall2016,Ackerman2016}, ACM~ \cite{McBride:2016:EDC:2874239.2874265,Kirkpatrick:2015:MCD:2808213.2788477,Frison:2016:FPT:3004323.3004336}, Scientific American~\cite{Greenemeier2016,Deamer2016,Kuchinskas2013}, Science~\cite{Bonnefon2016,Greene2016_1514}, other high-profile journals \cite{2016arXiv160608813G_GoodmanFlaxman, Coca-Vila2017, goodall2014vehicle}, conference workshops~\cite{Riener:2016:WEI:3004323.3005687,Alavi:2017:DCW:3064857.3079155} and other sources \cite{MoralMachine2016,Mooney2016,Achenbach2015}. Here is the \ins{general} scenario being discussed:
+A typical discussion about ethical aspects of self-driving cars starts with ethical thought experiment, so called \enquote{trolley problem} described in~\cite{Foot1967} and~\cite{Wintersberger2017}, that has been discussed in number of articles in IEEE~\cite{7948873,Goodall2016,Ackerman2016}, ACM~ \cite{McBride:2016:EDC:2874239.2874265,Kirkpatrick:2015:MCD:2808213.2788477,Frison:2016:FPT:3004323.3004336}, Scientific American~\cite{Greenemeier2016,Deamer2016,Kuchinskas2013}, Science~\cite{Bonnefon2016,Greene2016_1514}, other high-profile journals \cite{2016arXiv160608813G_GoodmanFlaxman, Coca-Vila2017, goodall2014vehicle}, conference workshops~\cite{Riener:2016:WEI:3004323.3005687,Alavi:2017:DCW:3064857.3079155} and other sources \cite{MoralMachine2016,Mooney2016,Achenbach2015,Shashkevich2017}. Here is the \ins{general} scenario being discussed:
 
 \textit{
 A self-driving vehicle drives on a street with a high speed. In front of the vehicle a group of people suddenly blocks the street. The vehicle is too fast to stop before it reaches the group. If the vehicle does not react immediately, the whole group will be killed. The car could however evade the group by entering the pedestrian way and consequently killing a previously not involved pedestrian. \ins{The following alternations of the problem exist}: (A) Replacing the pedestrian with a concrete wall, which in consequence will kill the passenger of the self-driving car; (B) Varying the personas of people in the group, the single pedestrian or the passenger \del{can be used as an alteration}. The use of personas allows including an emotional perspective~\cite{BleskeRechek2010}, e.g., stating that the single pedestrian is a child, a relative, a very old or a very sick human, or a brutal dictator, who killed thousands of people.}
@@ -44,9 +44,9 @@ The paper is structured as follows. A short introduction to self-driving cars an
 
 The term ``autonomous" could be ambiguous to some readers. It can be used to describe certain autonomous features or functions, such as advanced driver assistance systems, that for example assist the driver in keeping the lane or adjust to the speed of vehicles ahead. Those systems are designed to assist, but the driver is always responsible and has to intervene if critical situations occur. 
 
-We use the term ``self-driving" cars to avoid wrong interpretations of the terms ``fully autonomous" or ``driverless". Self-driving cars refer to cars that may operate driver-less without human help or even without a presence of human being. This means that the unoccupied car can drive from place A to B to pick up someone. This is the highest level of autonomy for cars and corresponds to the last level of five as defined by the Society of Automotive Engineers \cite{SAE2016} and United States National Highway Traffic Safety Administration (NHTSA), who, since September 2016, adopted SAE's classification with level 1 (no automation), level 2 (drive assistance), level 3 (partial automation), level 4 (conditional automation), and level 5 (full automation) \cite[p.9]{NationalHighwayTrafficSafetyAdministrationNHTSA2016}.
+We use the term ``self-driving" cars to avoid wrong interpretations of the terms ``fully autonomous" or ``driverless". Self-driving cars refer to cars that may operate self-driving without human help or even without a presence of human being. This means that the unoccupied car can drive from place A to B to pick up someone. This is the highest level of autonomy for cars and corresponds to the last level of five as defined by the Society of Automotive Engineers \cite{SAE2016} and United States National Highway Traffic Safety Administration (NHTSA), who, since September 2016, adopted SAE's classification with level 1 (no automation), level 2 (drive assistance), level 3 (partial automation), level 4 (conditional automation), and level 5 (full automation) \cite[p.9]{NationalHighwayTrafficSafetyAdministrationNHTSA2016}.
 
-A concrete example is the self-driving Waymo car \cite{Waymo2017}, former known as the Google car \cite{Google2016}, a fully autonomous and driver-less vehicle. 
+A concrete example is the self-driving Waymo car \cite{Waymo2017}, former known as the Google car \cite{Google2016}, a fully autonomous and self-driving vehicle. 
 
 
 \subsection{Decision Making Process in Self-Driving Cars}
@@ -117,7 +117,7 @@ In the following, we will discuss ethical deliberations surrounding the autonomo
 \subsection{Safety}
 \label{sec:EAofTC:Safety}
 
-Safety is the most fundamental requirement of autonomous cars. The central question is then: how should a self-driving car be tested? What guidelines should be fulfilled to ensure that it is safe to use? There are several standards, such as the ISO 26262, that specify the safety standard for road vehicles. For driver-less cars standards are under development, based on experiences being made. 
+Safety is the most fundamental requirement of autonomous cars. The central question is then: how should a self-driving car be tested? What guidelines should be fulfilled to ensure that it is safe to use? There are several standards, such as the ISO 26262, that specify the safety standard for road vehicles. For self-driving cars standards are under development, based on experiences being made. 
 Google Car tests show one million kilometres without any accident, is this a measurement to certify its software? As we discussed above, this should not be a reasonable assurance for safety. Should a self-driving car make a driver licence as suggested in \cite{McBride:2016:EDC:2874239.2874265}? How would that work? 
 
 The source code of autonomous cars are typically commercial and not publicly available. One possibility to assure code correctness via independent control. Should there be an independent organization to check those? But could it actually be checked? Who else than the developers at a car manufacturer or supplier will understand such a complex system? 
@@ -131,7 +131,7 @@ In the case of the software of the car will evolve even when the vehicle is alre
 When it comes to hardware and hardware-software systems, there have been discussions about the prices of laser radars compared to cameras or ultra-sonic sensors. Laser radars are very expensive, but deliver high quality data in diverse weather conditions. Ultra-sonic sensors or cameras are less accurate and sensitive under weather conditions like rain. 
 Should a car manufacturer choose a cheap over an expensive sensor, even if this raises the likelihood of errors/faults/accidents? In advanced driving assistance systems, the driver would take over, if a critical situation could not be handled by the system. What happens in self-driving cars? Will the car just stop and wait until the rain is over? Will passengers be able and allowed to intervene? Under which conditions? Would it be required to have a driving licence for a self-driving car? Or would the police have a possibility to intervene, and in what way, when a car behaves inadequately or even dangerously? Also would the police even have the possibility to stop a self-driving car that is behaving correctly, with the sole purpose of checking the passengers?
 
-The economic aspects might be seen as the highest priority. Using cheap equipment might lead to wrong decision-making and in a driver-less car, it would be impossible to interfere with the decisions made. Assuming that wrong decision may lead to a loss of human lives or property, having chosen a cheap component could therefore be ethically unacceptable.
+The economic aspects might be seen as the highest priority. Using cheap equipment might lead to wrong decision-making and in a self-driving car, it would be impossible to interfere with the decisions made. Assuming that wrong decision may lead to a loss of human lives or property, having chosen a cheap component could therefore be ethically unacceptable.
 
 Learning from experience is the most important basis for improvement of safety in self-driving cars. This is for instance envisioned by the CEO of Tesla, Elon Musk, in the Tesla's second 10 year master plan \enquote{part deux}, where the third element of the four major elements is: develop a vehicle self-driving capability that is 10x safer than manual via massive fleet learning\footnote{\url{https://www.tesla.com/blog/master-plan-part-deux}}.
 
@@ -155,7 +155,7 @@ Similar documents are mentioned, such as Microsoft Security Development Lifecycl
 
 There have been a number of attacks at car systems and sensors (e.g., LIDAR and GPS) that were used to manipulate the cars behaviour. Attacks might be inevitable, but should there be a minimum security threshold to allow a self-driving car to be used? This leads to another question: How secure must the systems and the connections be? 
 
-In aircrafts \enquote{black boxes} are used to determine what happened after a crash. Should this be also a part of a driver-less car? 
+In aircrafts \enquote{black boxes} are used to determine what happened after a crash. Should this be also a part of a self-driving car? 
 
 What about security issues and software updates? Should a self-driving car be allowed to drive, when it does not have the latest software version running? What about bugs in the new software?
 
@@ -178,7 +178,7 @@ Those and similar questions are met by legislation such as Regulation (EU) 2016/
 \subsection{Trust}
 \label{sec:EAofTC:Trust}
 
-Trust is an issue that appears in various forms in autonomous cars e.g. in production (when assembled, trust is the requirement for both hardware and software components) as well as in use of the car. A human might define where the car has to go, but the self-driving car will make the decisions how to get there, following the given rules and laws. However the driver-less car might already distribute data like the target location to a number of external services, such as traffic information or navigation data, which are used in the calculation of the route. But how trustworthy are those data sources (e.g., GPS, map data, external devices, other vehicles)? 
+Trust is an issue that appears in various forms in autonomous cars e.g. in production (when assembled, trust is the requirement for both hardware and software components) as well as in use of the car. A human might define where the car has to go, but the self-driving car will make the decisions how to get there, following the given rules and laws. However the self-driving car might already distribute data like the target location to a number of external services, such as traffic information or navigation data, which are used in the calculation of the route. But how trustworthy are those data sources (e.g., GPS, map data, external devices, other vehicles)? 
 
 In regard of the used sensors and hardware, the question is, how trustworthy are those? How can trust be implemented, when so many different systems are involved? 
 
@@ -218,7 +218,7 @@ When car manufacturers follow a non-transparent process of software engineering,
 
 One part of the Quality Assurance (QA) process regards assembling of components. All parts of a vehicle are designed, fabricated and then assembled to the overall car. A standard non-autonomous premium vehicle today has more than 100 electronic control units that are responsible for the control of e.g., the engine, the wipers, the navigation system or the dashboard~\cite{PELLICCIONE201783}. We assume that for self-driving the number will be increased. Parts are usually built by not one, but a multitude of suppliers. This requires an extensive design and development process, which again involves various disciplines, such as requirements engineering, software engineering or project management. It is an overall extensive process which holds ethical questions and challenges. Thus, it is necessary to include ethical deliberations in the overall process but also in all sub processes. As it is stated in~\cite{Sapienza2016a}: \enquote{value-based ethical aspects, which today are implicit, should be made visible in the course of design and development of technical systems, and thus a subject of scrutiny}. 
 
-Including ethics-aware decision making in all processes will help to make ethically justified decisions. This is important when it comes to questions: Which parts/components are used for a vehicle? Can we choose a cheaper component with less accuracy instead? Is the reliability of this part high enough for a driver-less car?
+Including ethics-aware decision making in all processes will help to make ethically justified decisions. This is important when it comes to questions: Which parts/components are used for a vehicle? Can we choose a cheaper component with less accuracy instead? Is the reliability of this part high enough for a self-driving car?
 
 
 
@@ -236,71 +236,31 @@ This in itself poses ethical problems: what strategy should be applied for peopl
 \subsection{Stakeholders - General Public Interests}
 \label{sec:EAofNONTC:Stakeholders}
 
-Humans concerns must be taken into account in the decision making of self-driving cars. \chg{Should there be an emergency button to the car like an emergency brake in a train?}{Should there be an emergency button to allow the human to interfere with the decision making of the self-driving car?} \ins{Putting the human back in the loop of decision making also inflicts with the autonomy of the system. Is it then truly self-driving? Giving passengers a choice to interfere with the decisions of the self-driving car puts the passenger back in charge, who would be responsible to press or not press the button in all situations}. In the context of the self-driving car the computer decision might be better, but it might also be worse than human, because of possible errors \cite{Eckstein2016}.
+Humans concerns must be taken into account in the decision making of self-driving cars. %\chg{Should there be an emergency button to the car like an emergency brake in a train?}{
+Should there be an emergency button to allow the human to interfere with the decision making of the self-driving car? %} %\ins{
+Putting the human back in the loop of decision making also inflicts with the autonomy of the system. Is it then truly self-driving? Giving passengers a choice to interfere with the decisions of the self-driving car puts the passenger back in charge, who would be responsible to press or not press the button in all situations. %}. 
+In the context of the self-driving car the computer decision might be better, but it might also be worse than human, because of possible errors~\cite{Eckstein2016}.
 %\ins{However, a train operates in a partially controlled environment, then the train can stop without any consequence. This does not hold for cars. A car suddenly stopping might create accidents.}
 
 Another perspective on the human interest is the granularity of the settings or configurations given to the user. How for example will a route be planned? The user could mark the route on a virtual map or the route could always be determined by a computer system. The latter might choose a route that follows guidelines to ensure maximum efficiency and balanced traffic flows in an area. However, routes with maximum advertisement next to the street or with certain shops or attractions could also be preferred over others. 
 
 In an extreme scenario self-driving cars might even avoid or reject to drive to a certain region or position. Would that be an interference with the freedom of choice, to be in control of where to go? It is therefore important to determine how much control the human should have, that will be taken into account when making design choices for a self-driving car. 
 
-
-\subsection{Selling Points}
-\label{sec:EAofNONTC:SellingPoints}
-
-The automotive industry has a highly competitive market. What will be the difference between buying a self-driving car of brand A compared to brand B? 
-
-Taking away the primary and secondary tasks of driving, i.e. the driving controls, safety features, assistance etc., leaves only entertainment and comfort functions in control of the passenger, the former driver. If the car is autonomous, it enables us to go from A to B without the effort of driving. Then the interior becomes more important and factors like the sound of the car probably become less important, because one cannot control it. So what will be the main buying criteria? Will it be the interior/exterior, speed or other complementary services? Or could the decision making actually be advertised? \ins{The latter is difficult, since statements \cite{CarAndDriverTaylor2016} to support the survival of passengers over pedestrians, i.e. a decision towards the trolley problem, by car manufacturers would have legal implications in most countries \cite{Daimler2016pr}}. \patrizio{Please, make clearer the ethical issue here.} 
-
-Could the \enquote{mind}, or \enquote{character}, such as \enquote{aggressiveness} of a self-driving car be a criterion? As for example in the following fictional advertisement statements: \enquote{our car will prioritize your life over all others}, \enquote{our car drives in the style of racing driver X} or \enquote{buy an upgrade to save your life in case of the trolley problem}? It is worth to notice that this would be a false promise, as \enquote{trolley problem} presupposes that car indeed can predict and act perfectly, which we already argued is not the case.
-
-Surveys based on hypothetical trolley problem scenarios show that people feel less attracted to buy a car that would sacrifice the passengers in order to save more human lives~\cite{Bonnefon2016}. Would that decision be left to car manufacturers? Existing policy documents do not seem to leave possibilities open for anti-social cars to be developed~ \cite{EthicsCommission2017pr,EthicsCommission2017b,Pillath2016,NHTSA2016PolicyUpdate,DBLP:journals/corr/CharisiDFLMSSWY17}.
-
-
-\section{Legislation, Standards, and Guidelines}
-\label{sec:LegislationStandardGuidelines}
-
-Present-day regulatory instruments for transportation systems are based on the assumption of human-driven vehicles. As the development and introduction of increasingly automated and connected cars proceed, from level 1 towards level 5 of automation, legislation needs constant updates \cite{EthicsCommission2017pr,EthicsCommission2017b,Pillath2016,NHTSA2016PolicyUpdate}. It has been recognized that present state regulatory instruments for human-controlled vehicles will not be adequate for self-driving cars:  \enquote{existing NHTSA authority is likely insufficient to meet the needs of the time and reap the full safety benefits of automation technology. Through these processes, NHTSA will determine whether its authorities need to be updated to recognize the challenges autonomous vehicles pose}~\cite{NHTSA2016PolicyUpdate}. % NHTSA | National Highway Traffic Safety Administration
-
-On 14 April 2016 EU member states endorsed the Declaration of Amsterdam \cite{GovernmentNL2017} that addresses legislation frameworks, use of data, liability, exchange of knowledge and cross-border testing for the emerging technology. It prepares a European framework for the implementation of interoperable connected and automated vehicles by 2019~\cite{EthicsCommission2017b}. It also considers roles of stakeholders:
-
- \begin{quote}
- Agreement by all stakeholders on the desired deployment of the new technologies will provide developers with the certainty they need for investments. For an effective communication between the technological and political spheres, categorization and terminology are being developed which define different levels of vehicle automation. \cite{Pillath2016} %\hfill
- \end{quote} %TODO CONFIRM REFERENCES, there seem to be number mixups
- 
-The question is thus how to ensure that self-driving will be built upon ethical guidelines, which will be adopted by society. The strategy is to rely on rigorously monitoring the behaviour of cars, while the details of implementation are responsibility of producers. That means among others that design and implementation of software should follow ethical guidelines. An example of ethical guidelines trying to think one step further is described in Sarah Spiekermann's book Ethical IT innovation \cite{spiekermann2015ethical}. 
-
-The approach based on \enquote{learning by experience} and \enquote{Proven in use} argument \cite{GovernmentNL2017,NationalInstruments2014a,DBLP:journals/corr/SchabeB15} presupposes a functioning socio-technological assurance system that has strong coupling among legislation, guidelines, standards and use and promptly adapts to lessons learned. Ethical analysis in~\cite{DodigCrnkovic2012, Thekkilakattil_7273594,Johnsen2017_7958474} addresses this problem of establishing and maintaining a functioning learning socio-technological system while \cite{Johnsen2017_7958474} discusses why functional safety standards are not enough.
-
-
-\section{Conclusions and final Remarks}
-\label{sec:Conclusions}
-Self-driving vehicles have been recognized as the future of transportation systems and will be successively introduced into the transport systems globally \cite{EthicsCommission2017pr,Pillath2016,NHTSA2016PolicyUpdate}. It is now the right time to start an investigation into the manifold of ethical challenges surrounding self-driving and connected vehicles \cite{EthicsCommission2017b}. As this new technology is being tested and gradually allowed on the roads under controlled conditions, the focus should be on the practical technological solutions and their social consequences, rather than on idealized unsolvable problems such as much discussed trolley problem. Conclusions reached from idealized problem discussions would be that it has no general solution under all circumstances. We can compare this situation with the development and introduction of first cars. If the developers of traditional driver-controlled cars asked about general responsibility of a human driver for traffic accidents before allowing them to enter traffic, they would never be accepted, as safety in general and under all circumstances cannot be guaranteed and indeed human factor is the major safety concern. This does not mean that we should not take care of the basic requirements like security, safety, privacy, trust etc. and social challenges in general including legislation and stakeholders interests. On the contrary, those real-world techno-social problems must be taken seriously.
-
-Focusing on unsolvable idealized ethical dilemmas such as the trolley problem obfuscates true ethical challenges, starting with characteristics of the whole techno-social system supporting new technology, with the emphasis on maximizing learning, on machine-, individual-, and social-level \cite{DodigCrnkovic2012, DBLP:journals/corr/CharisiDFLMSSWY17}. The decision-making process and its implementation, which is central for the behaviour of a car, might internally use unreliable or insecure technology. Emerging technology of self-driving cars should follow ethical guidelines that stakeholders agree upon and should not be an autonomous black box with unknown performance. This poses new expectations, which affect software engineering that is involved in all its stages - from its regulatory infrastructure, to the requirements engineering, development, implementation, testing and verification \cite{Greene2016_1514,MoralMachine2016,Mooney2016,Ackerman2016,DBLP:journals/corr/CharisiDFLMSSWY17}. As software is integral part of a complex software-hardware-human-society system, we presented different types of issues that we anticipate will affect software engineering in the near future.
-
-It is also the right time to discuss the border between what is technically possible in relation to what is ethically justifiable. Even if this might limit the possibilities, it will set the necessary ground for further developments. It is therefore important to include ethical thinking and reasoning into the design and development process of autonomous and driver-less vehicles. It is also necessary to enforce the transparency on those processes, so that independent evaluations become possible. Laws and regulations should emphasize the human interests, to make sure that the freedom of choice does not disappear in the new era of fully autonomous and driver-less vehicles. 
-
- HERE WE ARE MISSING THREE SENTENCES ABOUT SOFTWARE ENGINEERING. 
- HERE WE ARE MISSING THREE SENTENCES ABOUT SOFTWARE ENGINEERING. 
- HERE WE ARE MISSING THREE SENTENCES ABOUT SOFTWARE ENGINEERING. 
- HERE WE ARE MISSING THREE SENTENCES ABOUT SOFTWARE ENGINEERING. 
- HERE WE ARE MISSING THREE SENTENCES ABOUT SOFTWARE ENGINEERING. 
- 
-
-
-
-\begin{table*}
+\begin{table*}[t]
 	%\vspace{-1.5em}
 	\centering
-	\caption{Summary of Challenges and Recommendations grouped by Requirements}
+	\caption{Summary of the technical Challenges and Recommendations grouped by Requirements}
 	%	\vspace{-8pt}
 	\label{tab:Findings}
 	\begin{small}
-		\begin{supertabular}{>{}p{.02\textwidth}|>{\raggedright}p{.105\textwidth}>{\raggedright}p{.4\textwidth}>{\raggedright}p{.4\textwidth}}
+		\begin{supertabular}{%>{}p{.02\textwidth}|
+		>{\raggedright}p{.105\textwidth}>{\raggedright}p{.4\textwidth}>{\raggedright}p{.42\textwidth}}
 			\toprule
-			 & {Requirements} & {Challenges} & {Recommendations}  \tabularnewline
+			 %& 
+			 {Requirements} & {Challenges} & {Recommendations}  \tabularnewline
 			\midrule
-			\multirow{40}{*}{{\rotatebox[origin=r]{90}{Technical challenges}}} &Safety & 
+			%\multirow{40}{*}{{\rotatebox[origin=r]{90}{Technical challenges}}} & 
+			Safety & 
 					%\begin{itemize}
 					%\item 
 					\noindent $\bullet$ Trade-off between safety and other aspects like economic aspects\\
@@ -322,8 +282,9 @@ It is also the right time to discuss the border between what is technically poss
 					%\item 
 					\noindent $\bullet$ New techniques and standards are necessary to guarantee safety in self-driving cars that will continuously update their software.
 					%\end{itemize} 			
- 			 \tabularnewline \cmidrule{2-4}
-			& Security & 
+ 			 \tabularnewline \hline %\cmidrule{2-4}
+			%& 
+			Security & 
 					%\begin{itemize}
 					\noindent $\bullet$  Minimum security requirements?\\
 					\noindent $\bullet$  How secure must the systems and connections be?\\
@@ -336,11 +297,12 @@ It is also the right time to discuss the border between what is technically poss
 					\noindent $\bullet$ Provide technical solutions that will guarantee minimum security under all foreseeble circumstances\\
 					\noindent $\bullet$ Anticipate and prevent worst case scenarios regarding security breaches\\
 					\noindent $\bullet$ Continuous learning process must be in place to provide active security\\
-					\noindent $\bullet$ Assure accessibility of the data even in the case of accident so that it could be analyzed and lessons learned.\\
+					\noindent $\bullet$ Assure accessibility of the data even in the case of accident so that it could be analyzed and lessons learned.%\\
 					  
 					%\end{itemize}										 
- 		     \tabularnewline \cmidrule{2-4}
-			& Privacy & 
+ 		     \tabularnewline \hline %\cmidrule{2-4}
+			%& 
+			Privacy & 
 				\vspace{-8pt}
 				%\begin{itemize}
 				%	\item 
@@ -356,8 +318,9 @@ It is also the right time to discuss the border between what is technically poss
 				%	\item 
 				\noindent $\bullet$ Justify the use of collected data through a transparent decision making process.
 				%\end{itemize}	
- 			 \tabularnewline \cmidrule{2-4}
-			& Trust & 
+ 			 \tabularnewline \hline %\cmidrule{2-4}
+			%& 
+			Trust & 
 				%\begin{itemize}
 				%	\item 
 				\noindent $\bullet$ How trust between both software and hardware components of complex systems can be implemented is not clear.
@@ -369,8 +332,9 @@ It is also the right time to discuss the border between what is technically poss
 				%	\item 
 				\noindent $\bullet$ Provide trusted connections between components as well as external services.
 				%\end{itemize}
- 			 \tabularnewline \cmidrule{2-4}
-			& Transparency & 
+ 			 \tabularnewline \hline %\cmidrule{2-4}
+			%& 
+			Transparency & 
                % \begin{itemize}
 				
 				%	\item 
@@ -383,42 +347,58 @@ It is also the right time to discuss the border between what is technically poss
 			& 
 				%\begin{itemize}
 				%	\item 
-				\noindent $\bullet$ Ensure transparency and provide insight into decision making.
+				\noindent $\bullet$ Ensure transparency and provide insight into decision making.\\
 				%	\item 
-				\noindent $\bullet$ Actively share knowledge, gained by \enquote{learning through experience}, to ensure the interoperability of systems and services.
+				\noindent $\bullet$ Actively share knowledge, gained by \enquote{learning through experience}, to ensure the interoperability of systems and services.\\
 				%		\item 
 				\noindent $\bullet$ Transparency is a prerequisite for the herein introduced challenges, since it is the key to potentially undisclosed background information.
 				%\end{itemize}
- 			 \tabularnewline \cmidrule{2-4}
-			& Reliability & 
-				\begin{itemize}
-					\item Reliability of required networks and solution for the case when the network is unavailable
-					\item Reliability of sensors, and need for redundancy
-					\item Way to determine when a car is not reliable anymore
-				\end{itemize}	
+ 			 \tabularnewline \hline %\cmidrule{2-4}
+			%& 
+			Reliability & 
+				%\begin{itemize}
+				%	\item 
+				\noindent $\bullet$ Reliability of required networks and solution for the case when the network is unavailable\\
+				%	\item 
+				\noindent $\bullet$ Reliability of sensors, and need for redundancy\\
+				%	\item 
+				\noindent $\bullet$ Way to determine when a car is not reliable anymore
+				%\end{itemize}	
 			& 
-				\begin{itemize}
-					\item Define different levels for reliability (diagnostics, vehicle input sensors, external services)
-					\item Determine reliability for components and the overall car. 
-				\end{itemize}
- 			 \tabularnewline \cmidrule{2-4}
-			& Responsibility and accountability & 
-				\begin{itemize}
-					\item Responsibility and accountability in case of incidents and accidents
-					\item Responsibility that car software follows ethical principles
-				\end{itemize}
+				%\begin{itemize}
+				%	\item 
+				\noindent $\bullet$ Define different levels for reliability (diagnostics, vehicle input sensors, external services)\\
+				%	\item 
+				\noindent $\bullet$ Determine reliability for components and the overall car. 
+				%\end{itemize}
+ 			 \tabularnewline \hline %\cmidrule{2-4}
+			%& 
+			Responsibility and accountability & 
+				%\begin{itemize}
+				%	\item 
+				\noindent $\bullet$ Responsibility and accountability in case of incidents and accidents\\
+				%	\item 
+				\noindent $\bullet$ Responsibility that car software follows ethical principles
+				%\end{itemize}
 			& 
-				\begin{itemize}
-					\item Consider research and learn from robotics, i.e. Roboethics \cite{Dodig-Crnkovic:2008:SMR:1566864.1566888}.
-					\item Support development of solutions, e.g. by contributing to existing approaches \cite{DepartmentforTransportDfT2017}.
-				\end{itemize}
- 			 \tabularnewline \cmidrule{2-4}
-			& Quality Assurance (QA) Process & 
-				\begin{itemize}
-				    \item Quality of components
-				    \item Quality of decision making
-				    \item Lifetime and maintenance
-					\item Trade-offs between non-transparent processes and external QA control of adherence of ethical principles/guidelines.
+				%\begin{itemize}
+				%	\item 
+				\noindent $\bullet$ Consider research and learn from robotics, i.e. Roboethics \cite{Dodig-Crnkovic:2008:SMR:1566864.1566888}.\\
+				%	\item 
+				\noindent $\bullet$ Support development of solutions, e.g. by contributing to existing approaches \cite{DepartmentforTransportDfT2017}.
+				%\end{itemize}
+ 			 \tabularnewline \hline %\cmidrule{2-4}
+			%& 
+			Quality Assurance (QA) Process & 
+				%\begin{itemize}
+				 %   \item 
+				 \noindent $\bullet$ Quality of components\\
+				 %   \item 
+				 \noindent $\bullet$ Quality of decision making\\
+				 %   \item 
+				 \noindent $\bullet$ Lifetime and maintenance\\
+				%	\item 
+				\noindent $\bullet$ Trade-offs between non-transparent processes and external QA control of adherence of ethical principles/guidelines.
 					%\item How do engineers ensure high quality components?
 					%\item How is the decision making implemented?
 					%\item How to ensure a certain quality?
@@ -426,79 +406,154 @@ It is also the right time to discuss the border between what is technically poss
 					%\item How will maintenance be organized and quality assured?
 					%\item When car manufacturers follow a non-transparent process of software engineering, how could anyone make sure that the car follows a certain ethical guideline?
 					%\item Whose responsibility will it be that car software follows ethical principles? %<- BETTER IN Responsibility and Accountability section?
-				\end{itemize}                   
+				%\end{itemize}                   
 			& 
-				\begin{itemize}
-					\item Ethical deliberations must be included in the process of design and development of driver-less cars.
-					\item Ethics-aware decision making must be part of the process to ensure ethically justified decisions.
-				\end{itemize}
-			\tabularnewline \cmidrule{1-4}
- 			 \tabularnewline 					
-			\bottomrule
-		\end{supertabular}
-	\end{small}
-	
-\end{table*}			
-			
-			
-\begin{table*}
-	%\vspace{-1.5em}
-	\centering
-	\caption{Summary of Challenges and Recommendations grouped by Requirements}
-	%	\vspace{-8pt}
-	\label{tab:Findings}
-	\begin{small}
-		\begin{supertabular}{>{}p{.02\textwidth}|>{\raggedright}p{.105\textwidth}>{\raggedright}p{.4\textwidth}>{\raggedright}p{.4\textwidth}}
-			\toprule
-			 & {Requirements} & {Challenges} & {Recommendations}  \tabularnewline
-			\midrule
-			\multirow{25}{*}{{\rotatebox[origin=r]{90}{Non Technical challenges}}} &Social Challenges & 
-				\begin{itemize}
-					\item Handling job losses
-					\item Car insurances becoming less important 
-				\end{itemize}         
-			& 	
-				\begin{itemize}
-					\item Prepare strategies for people loosing jobs due to self-driving cars.
-					\item Take advice/learn from historic parallels to industrialization and automatization
-				\end{itemize} 
-			\tabularnewline \cmidrule{2-4}
-			& Stakeholders - General Public Interests & 
-				\begin{itemize}
-					\item Humans concerns in the decision making of driver-less cars (e.g. a button for an emergency stop like in trains?)
-					\item Freedom of choice hindered by the system (e.g. it may not allow to drive into a certain area.)
-				\end{itemize}         
-			& 
-				\begin{itemize}
-					\item Determine and communicate the amount of control a human has in context of the driver-less car.
-					\item The freedom of choice should be determined by regulations.
-				\end{itemize}         
- 			 \tabularnewline \cmidrule{2-4}
-  			& Selling Points & 
-				\begin{itemize}
-					\item Driver-less cars will have different buying criteria, such as interior/exterior, speed or complementary services.
-					\item Existing policy documents don't seem to leave possibilities open for anti-social cars to be developed \cite{EthicsCommission2017pr,EthicsCommission2017b,Pillath2016,NHTSA2016PolicyUpdate,DBLP:journals/corr/CharisiDFLMSSWY17}.
-				\end{itemize}         
-			& 
-				\begin{itemize}
-					\item  
-				\end{itemize}         
- 			 \tabularnewline \cmidrule{2-4}
-			& Norms and Standards & 
-				\begin{itemize}
-					\item 
-					\item  
-				\end{itemize}         
-			& 
-				\begin{itemize}
-					\item 
-					\item  
-				\end{itemize}   
+				%\begin{itemize}
+				%	\item 
+				\noindent $\bullet$ Ethical deliberations must be included in the process of design and development of self-driving cars.\\
+				%	\item 
+				\noindent $\bullet$ Ethics-aware decision making must be part of the process to ensure ethically justified decisions.
+				%\end{itemize}
+			%\tabularnewline \cmidrule{1-4}
  			 \tabularnewline 					
 			\bottomrule
 		\end{supertabular}
 	\end{small}
 	
 \end{table*}
+
+\subsection{Selling Points}
+\label{sec:EAofNONTC:SellingPoints}
+
+The automotive industry has a highly competitive market. What will be the difference between buying a self-driving car of brand A compared to brand B? 
+
+Taking away the primary and secondary tasks of driving, i.e. the driving controls, safety features, assistance etc., leaves only entertainment and comfort functions in control of the passenger, the former driver. If the car is autonomous, it enables us to go from A to B without the effort of driving. Then the interior becomes more important and factors like the sound of the car probably become less important, because one cannot control it. So what will be the main buying criteria? Will it be the interior/exterior, speed or other complementary services? Or could the decision making actually be advertised? %\ins{
+The latter is difficult, since statements~\cite{CarAndDriverTaylor2016} to support the survival of passengers over pedestrians, i.e. a decision towards the trolley problem, by car manufacturers would have legal implications in most countries~\cite{Daimler2016pr}. %}. \patrizio{Please, make clearer the ethical issue here.} 
+
+Could the \enquote{mind}, or \enquote{character}, such as \enquote{aggressiveness} of a self-driving car be a criterion? As for example in the following fictional advertisement statements: \enquote{our car will prioritize your life over all others}, \enquote{our car drives in the style of racing driver X} or \enquote{buy an upgrade to save your life in case of the trolley problem}? It is worth to notice that this would be a false promise, as \enquote{trolley problem} presupposes that car indeed can predict and act perfectly, which we already argued is not the case.
+
+Surveys based on hypothetical trolley problem scenarios show that people feel less attracted to buy a car that would sacrifice the passengers in order to save more human lives~\cite{Bonnefon2016}. Would that decision be left to car manufacturers? Existing policy documents do not seem to leave possibilities open for anti-social cars to be developed~ \cite{EthicsCommission2017pr,EthicsCommission2017b,Pillath2016,NHTSA2016PolicyUpdate,DBLP:journals/corr/CharisiDFLMSSWY17}.
+
+\begin{table*}[t]
+	%\vspace{-1.5em}
+	\centering
+	\caption{Summary of non technical Challenges and Recommendations grouped by Requirements}
+	%	\vspace{-8pt}
+	\label{tab:Findings}
+	\begin{small}
+		\begin{supertabular}{%>{}p{.02\textwidth}|
+		>{\raggedright}p{.105\textwidth}>{\raggedright}p{.41\textwidth}>{\raggedright}p{.41\textwidth}}
+			\toprule
+			 %& 
+			 {Requirements} & {Challenges} & {Recommendations}  \tabularnewline
+			\midrule
+			%\multirow{15}{*}{{\rotatebox[origin=r]{90}{Non Technical challenges}}} &
+			Social Challenges & 
+				%\begin{itemize}
+				%	\item 
+				\noindent $\bullet$ Handling job losses\\
+				%	\item 
+				\noindent $\bullet$ Car insurances becoming less important 
+				%\end{itemize}         
+			& 	
+				%\begin{itemize}
+				%	\item 
+				\noindent $\bullet$ Prepare strategies for people loosing jobs due to self-driving cars.\\
+				%	\item 
+				\noindent $\bullet$ Take advice/learn from historic parallels to industrialization and automatization
+				%\end{itemize} 
+			\tabularnewline \hline %\cmidrule{2-4}
+			%& 
+			Stakeholders - General Public Interests & 
+				%\begin{itemize}
+				%	\item 
+				\noindent $\bullet$ Humans concerns in the decision making of self-driving cars (e.g. a button for an emergency stop like in trains?)\\
+				%	\item 
+				\noindent $\bullet$ Freedom of choice hindered by the system (e.g. it may not allow to drive into a certain area.)
+				%\end{itemize}         
+			& 
+				%\begin{itemize}
+				%	\item 
+				\noindent $\bullet$ Determine and communicate the amount of control a human has in context of the self-driving car.\\
+				%	\item 
+				\noindent $\bullet$ The freedom of choice should be determined by regulations.
+				%\end{itemize}         
+ 			 \tabularnewline \hline %\cmidrule{2-4}
+  			%& 
+  			Selling Points & 
+				%\begin{itemize}
+				%	\item 
+				\noindent $\bullet$ self-driving cars will have different buying criteria, such as interior/exterior, speed or complementary services.\\
+				%	\item 
+				\noindent $\bullet$ Existing policy documents don't seem to leave possibilities open for anti-social cars to be developed \cite{EthicsCommission2017pr,EthicsCommission2017b,Pillath2016,NHTSA2016PolicyUpdate,DBLP:journals/corr/CharisiDFLMSSWY17}.
+				%\end{itemize}         
+			& 
+				%\begin{itemize}
+				%	\item  
+				%\end{itemize}   
+				\noindent $\bullet$ \\
+				\noindent $\bullet$ 
+ 			 \tabularnewline \hline %\cmidrule{2-4}
+			%& 
+			Norms and Standards & 
+				%\begin{itemize}
+				%	\item 
+				%	\item  
+				%\end{itemize}
+				\noindent $\bullet$ \\
+				\noindent $\bullet$ 
+			& 
+				%\begin{itemize}
+				%	\item 
+				%	\item  
+				%\end{itemize} 
+				\noindent $\bullet$ \\
+				\noindent $\bullet$ 
+ 			 \tabularnewline %\cmidrule{2-4}					
+			\bottomrule
+		\end{supertabular}
+	\end{small}
+	
+\end{table*}
+
+\section{Legislation, Standards, and Guidelines}
+\label{sec:LegislationStandardGuidelines}
+
+Present-day regulatory instruments for transportation systems are based on the assumption of human-driven vehicles. As the development and introduction of increasingly automated and connected cars proceed, from level 1 towards level 5 of automation, legislation needs constant updates \cite{EthicsCommission2017pr,EthicsCommission2017b,Pillath2016,NHTSA2016PolicyUpdate}. It has been recognized that present state regulatory instruments for human-controlled vehicles will not be adequate for self-driving cars:  \enquote{existing NHTSA authority is likely insufficient to meet the needs of the time and reap the full safety benefits of automation technology. Through these processes, NHTSA will determine whether its authorities need to be updated to recognize the challenges autonomous vehicles pose}~\cite{NHTSA2016PolicyUpdate}. % NHTSA | National Highway Traffic Safety Administration
+
+On 14 April 2016 EU member states endorsed the Declaration of Amsterdam \cite{GovernmentNL2017} that addresses legislation frameworks, use of data, liability, exchange of knowledge and cross-border testing for the emerging technology. It prepares a European framework for the implementation of interoperable connected and automated vehicles by 2019~\cite{EthicsCommission2017b}. It also considers roles of stakeholders:
+
+ \begin{quote}
+ Agreement by all stakeholders on the desired deployment of the new technologies will provide developers with the certainty they need for investments. For an effective communication between the technological and political spheres, categorization and terminology are being developed which define different levels of vehicle automation. \cite{Pillath2016} %\hfill
+ \end{quote} %TODO CONFIRM REFERENCES, there seem to be number mixups
+ 
+The question is thus how to ensure that self-driving will be built upon ethical guidelines, which will be adopted by society. The strategy is to rely on rigorously monitoring the behaviour of cars, while the details of implementation are responsibility of producers. That means among others that design and implementation of software should follow ethical guidelines. An example of ethical guidelines trying to think one step further is described in Sarah Spiekermann's book Ethical IT innovation \cite{spiekermann2015ethical}. 
+
+The approach based on \enquote{learning by experience} and \enquote{Proven in use} argument \cite{GovernmentNL2017,NationalInstruments2014a,DBLP:journals/corr/SchabeB15} presupposes a functioning socio-technological assurance system that has strong coupling among legislation, guidelines, standards and use and promptly adapts to lessons learned. Ethical analysis in~\cite{DodigCrnkovic2012, Thekkilakattil_7273594,Johnsen2017_7958474} addresses this problem of establishing and maintaining a functioning learning socio-technological system while \cite{Johnsen2017_7958474} discusses why functional safety standards are not enough.
+
+
+
+\section{Conclusions and final Remarks}
+\label{sec:Conclusions}
+Self-driving vehicles have been recognized as the future of transportation systems and will be successively introduced into the transport systems globally \cite{EthicsCommission2017pr,Pillath2016,NHTSA2016PolicyUpdate}. It is now the right time to start an investigation into the manifold of ethical challenges surrounding self-driving and connected vehicles \cite{EthicsCommission2017b}. As this new technology is being tested and gradually allowed on the roads under controlled conditions, the focus should be on the practical technological solutions and their social consequences, rather than on idealized unsolvable problems such as much discussed trolley problem. Conclusions reached from idealized problem discussions would be that it has no general solution under all circumstances. We can compare this situation with the development and introduction of first cars. If the developers of traditional driver-controlled cars asked about general responsibility of a human driver for traffic accidents before allowing them to enter traffic, they would never be accepted, as safety in general and under all circumstances cannot be guaranteed and indeed human factor is the major safety concern. This does not mean that we should not take care of the basic requirements like security, safety, privacy, trust etc. and social challenges in general including legislation and stakeholders interests. On the contrary, those real-world techno-social problems must be taken seriously.
+
+Focusing on unsolvable idealized ethical dilemmas such as the trolley problem obfuscates true ethical challenges, starting with characteristics of the whole techno-social system supporting new technology, with the emphasis on maximizing learning, on machine-, individual-, and social-level \cite{DodigCrnkovic2012, DBLP:journals/corr/CharisiDFLMSSWY17}. The decision-making process and its implementation, which is central for the behaviour of a car, might internally use unreliable or insecure technology. Emerging technology of self-driving cars should follow ethical guidelines that stakeholders agree upon and should not be an autonomous black box with unknown performance. This poses new expectations, which affect software engineering that is involved in all its stages - from its regulatory infrastructure, to the requirements engineering, development, implementation, testing and verification \cite{Greene2016_1514,MoralMachine2016,Mooney2016,Ackerman2016,DBLP:journals/corr/CharisiDFLMSSWY17}. As software is integral part of a complex software-hardware-human-society system, we presented different types of issues that we anticipate will affect software engineering in the near future.
+
+It is also the right time to discuss the border between what is technically possible in relation to what is ethically justifiable. Even if this might limit the possibilities, it will set the necessary ground for further developments. 
+The discussion should cover different dimensions, namely business, technical, process, and organization. First of all, there is the need to open a serious trade off analysis between business needs and ethics. As discussed above we should certainly avoid to compromise safety because of business priorities, e.g. equipping the car with cheaper but unreliable sensors. 
+For what concerns technical aspects, it is of key importance to include ethical thinking and reasoning into the design and development process of autonomous and self-driving vehicles. Ethical aspects should be considered in every phase of a software development process, from requirements, till testing, maintenance, and evolution. Architectural and design decisions should be taken through a process that includes ethics as first-class actor and by involving stakeholders that are relevant to this concern. These architectural and design decisions should then be embedded into the code that will run the self-driving vehicles and ensure its ethical aspects are taken care of.    
+It is also necessary to enforce the transparency on those processes, so that independent evaluations become possible. Proper development processes, supported by suitable organization structure should promote and enable a serious discussion of ethics, and 
+% Laws and regulations 
+should emphasize the human interests, to make sure that the freedom of choice does not disappear in the new era of fully autonomous and self-driving vehicles. 
+
+  
+ 
+
+
+
+			
+			
+			
+
 
 
